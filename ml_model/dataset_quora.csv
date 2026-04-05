@@ -1,0 +1,338 @@
+question,label
+How do I convert Celsius to Fahrenheit?,clear
+Send the document,ambiguous
+Do this,ambiguous
+Change the option,ambiguous
+Make an appointment,ambiguous
+Change the settings,ambiguous
+Shutdown it,ambiguous
+Block that,ambiguous
+What is the difference between AI and ML?,clear
+Call someone,ambiguous
+Make a reservation,ambiguous
+Reload it,ambiguous
+Reserve a table,ambiguous
+What are the benefits of exercise?,clear
+What are the types of databases?,clear
+I need help,ambiguous
+How do I write an essay?,clear
+How do I improve website performance?,clear
+How do I make a website?,clear
+What is the capital of Australia?,clear
+Comment this,ambiguous
+How do I make a budget?,clear
+What is the difference between socialism and capitalism?,clear
+Get help,ambiguous
+Install this,ambiguous
+Can you explain machine learning?,clear
+Get that,ambiguous
+Delete that,ambiguous
+Make one,ambiguous
+Process that,ambiguous
+What are the symptoms of diabetes?,clear
+What are the best practices for cybersecurity?,clear
+Send the report,ambiguous
+Call them,ambiguous
+Order online,ambiguous
+What are the primary colors?,clear
+Buy the ticket,ambiguous
+What is machine learning used for?,clear
+Send that,ambiguous
+Change this,ambiguous
+Fix the problem,ambiguous
+Cancel the subscription,ambiguous
+Buy online,ambiguous
+Order anything,ambiguous
+Update that,ambiguous
+Make a payment,ambiguous
+How do I optimize database queries?,clear
+Cancel the meeting,ambiguous
+Book something,ambiguous
+Book the service,ambiguous
+How do I read faster?,clear
+What are design patterns?,clear
+What is the difference between HTTP and HTTPS?,clear
+Subscribe that,ambiguous
+How does GPS work?,clear
+How do I learn Python programming?,clear
+How do I invest in stocks?,clear
+What is the difference between a comet and asteroid?,clear
+What is quantum computing?,clear
+Unfollow this,ambiguous
+What is the freezing point of water?,clear
+What is the difference between TCP and UDP?,clear
+What are the types of clouds?,clear
+Refresh that,ambiguous
+How do I draw a portrait?,clear
+Schedule a demo,ambiguous
+Buy now,ambiguous
+Order a pizza,ambiguous
+How do I study effectively?,clear
+Cancel it,ambiguous
+What is the currency of Japan?,clear
+Fix it,ambiguous
+Change it,ambiguous
+How do I manage stress?,clear
+Delete it,ambiguous
+Paste this,ambiguous
+Restart that,ambiguous
+How do I use Git for version control?,clear
+What is the difference between weather and climate?,clear
+Who painted the Mona Lisa?,clear
+How do I improve my memory?,clear
+What are the types of triangles?,clear
+How do I write a resume?,clear
+Delete everything,ambiguous
+Cancel my order,ambiguous
+Cancel immediately,ambiguous
+How do I debug a program?,clear
+Delete the entry,ambiguous
+Do something,ambiguous
+Reset this,ambiguous
+Update the app,ambiguous
+How do I backup my data?,clear
+Handle it,ambiguous
+Send the email,ambiguous
+Reserve seats,ambiguous
+Schedule something,ambiguous
+How does photosynthesis work?,clear
+Send now,ambiguous
+Fix the issue now,ambiguous
+Delete my account,ambiguous
+What is the difference between SQL and NoSQL?,clear
+Order food,ambiguous
+Update it,ambiguous
+Share that,ambiguous
+What is the difference between affect and effect?,clear
+How do I build muscle?,clear
+Update my profile,ambiguous
+Fix that,ambiguous
+Change my password,ambiguous
+Schedule today,ambiguous
+What causes earthquakes?,clear
+How do I change a tire?,clear
+How do I save money?,clear
+How does the internet work?,clear
+Cancel the booking,ambiguous
+What is the difference between frontend and backend?,clear
+Send the invoice,ambiguous
+What are the types of energy?,clear
+Open that,ambiguous
+Get the file,ambiguous
+How do I start running?,clear
+How do I scale a web application?,clear
+How do I create a Python virtual environment?,clear
+What are the benefits of reading?,clear
+How do I calculate compound interest?,clear
+Cut that,ambiguous
+How do I meditate?,clear
+Update the system,ambiguous
+How do I create a REST API?,clear
+What is the process of mitosis?,clear
+Scan that,ambiguous
+What are the SOLID principles?,clear
+Stop that,ambiguous
+Book an appointment,ambiguous
+How do I create a database?,clear
+What is the formula for area of a circle?,clear
+What is the largest ocean on Earth?,clear
+Schedule ASAP,ambiguous
+Who wrote Romeo and Juliet?,clear
+Change all,ambiguous
+What are the principles of design?,clear
+What is the difference between weather forecast and climate prediction?,clear
+What is the Pythagorean theorem?,clear
+What is the tallest mountain in the world?,clear
+How many continents are there?,clear
+Fix this,ambiguous
+Update this,ambiguous
+How do I test software?,clear
+What is the difference between RAM and ROM?,clear
+Send everything,ambiguous
+How do I learn a new language?,clear
+What is the difference between mass and weight?,clear
+Complete this,ambiguous
+Get the data,ambiguous
+Reserve it,ambiguous
+Order the food,ambiguous
+How do I play guitar?,clear
+Order it,ambiguous
+Who won the World Cup in 2018?,clear
+What are the symptoms of flu?,clear
+Close this,ambiguous
+What is the difference between a virus and bacteria?,clear
+How do I make bread?,clear
+Buy the product,ambiguous
+What is the largest desert in the world?,clear
+Fix the code,ambiguous
+What are the signs of depression?,clear
+Report it,ambiguous
+Send the file,ambiguous
+Get that,ambiguous
+Order items,ambiguous
+What is the speed of light?,clear
+Redo this,ambiguous
+What are renewable energy sources?,clear
+Resume it,ambiguous
+How does blockchain technology work?,clear
+Get me one,ambiguous
+Order the product,ambiguous
+What is the meaning of life?,clear
+What is the population of India?,clear
+How do I tie a tie?,clear
+Book a flight,ambiguous
+Buy the book,ambiguous
+What are the planets in our solar system?,clear
+Print this,ambiguous
+Book now,ambiguous
+What are microservices?,clear
+Undo it,ambiguous
+What is the difference between Java and JavaScript?,clear
+Book the ticket,ambiguous
+How do I learn to code?,clear
+How do I make pizza?,clear
+Schedule it,ambiguous
+What is the longest river in the world?,clear
+What are the organs in the human body?,clear
+Update now,ambiguous
+When was the Declaration of Independence signed?,clear
+Get the details,ambiguous
+Book a room,ambiguous
+Fix the error,ambiguous
+Download it,ambiguous
+What are the benefits of drinking water?,clear
+How do I grow plants indoors?,clear
+What is the difference between DNA and RNA?,clear
+Buy it,ambiguous
+How do I implement caching?,clear
+How many bones are in the human body?,clear
+What is the difference between a lake and a pond?,clear
+Delete files,ambiguous
+What is the capital of Canada?,clear
+Order something,ambiguous
+Get all,ambiguous
+Buy something,ambiguous
+What are the phases of the moon?,clear
+What time is it in New York?,clear
+What are the benefits of meditation?,clear
+What is the difference between speed and velocity?,clear
+Copy it,ambiguous
+Get the report,ambiguous
+How do I lose weight safely?,clear
+Load that,ambiguous
+Start it,ambiguous
+How do I secure a web application?,clear
+Delete this,ambiguous
+Book a table,ambiguous
+How do I improve my communication skills?,clear
+Schedule the meeting,ambiguous
+Do it now,ambiguous
+How do I take good photos?,clear
+Follow it,ambiguous
+Move it,ambiguous
+Make some,ambiguous
+What is the difference between compiler and interpreter?,clear
+What are the causes of climate change?,clear
+Like it,ambiguous
+Make a booking,ambiguous
+How do I train a dog?,clear
+Get it,ambiguous
+Change the plan,ambiguous
+What are the benefits of yoga?,clear
+How do I compress files?,clear
+What are the symptoms of COVID-19?,clear
+Get tickets,ambiguous
+How do I deploy a web application?,clear
+What is the difference between authentication and authorization?,clear
+How do I solve a Rubik's cube?,clear
+What is the theory of relativity?,clear
+Get information,ambiguous
+Book the hotel,ambiguous
+Book the slot,ambiguous
+How do I write clean code?,clear
+How do I cook rice?,clear
+What are the types of government?,clear
+What is the function of mitochondria?,clear
+How do I reset my password?,clear
+Make changes,ambiguous
+How do I start a business?,clear
+What are the layers of the atmosphere?,clear
+Change settings,ambiguous
+Buy this,ambiguous
+Send it,ambiguous
+Fix the bug,ambiguous
+Delete the record,ambiguous
+What is the speed of sound?,clear
+Make it,ambiguous
+How do I bake a cake?,clear
+Update the software,ambiguous
+Schedule a call,ambiguous
+What are the types of rocks?,clear
+How do I grow tomatoes?,clear
+Fix the issue,ambiguous
+Schedule an appointment,ambiguous
+What is the weather forecast for tomorrow?,clear
+How do I use Docker?,clear
+Save it,ambiguous
+What is the difference between agile and waterfall?,clear
+How do I play chess?,clear
+Cancel that,ambiguous
+Order now,ambiguous
+What is the boiling point of water?,clear
+What is the square root of 144?,clear
+How do I handle errors in code?,clear
+What is the chemical formula for water?,clear
+How many planets are in the solar system?,clear
+Book a cab,ambiguous
+Send this,ambiguous
+How do I make coffee?,clear
+What are the layers of Earth?,clear
+Buy tickets,ambiguous
+What is the capital of France?,clear
+What are the benefits of sleep?,clear
+How do I install Python packages?,clear
+How do I write a book?,clear
+Uninstall that,ambiguous
+Pause this,ambiguous
+Upload this,ambiguous
+Make a reservation now,ambiguous
+Make a call,ambiguous
+What is artificial intelligence?,clear
+Fix all,ambiguous
+What is the difference between stack and queue?,clear
+Schedule an event,ambiguous
+Who invented the telephone?,clear
+Order the item,ambiguous
+Book online,ambiguous
+What is the difference between renewable and non-renewable energy?,clear
+Cancel this,ambiguous
+Book me a flight to Japan from India for 22nd March,clear
+Book a flight to London on December 15th,clear
+Reserve a table for 4 people at 7 PM tonight at Italian restaurant,clear
+Order 2 large pizzas with extra cheese for delivery,clear
+Schedule a meeting with the team tomorrow at 3 PM in conference room A,clear
+Buy 3 tickets for the concert on Saturday evening,clear
+Book a hotel room in Paris for 3 nights starting June 10th,clear
+Reserve a car rental in New York from Monday to Friday,clear
+Order 5 copies of the Python programming book,clear
+Schedule a doctor appointment next Tuesday at 10 AM,clear
+Book a train ticket from Mumbai to Delhi on 25th January,clear
+Reserve 2 seats for the movie at 8 PM tonight,clear
+Order a large pepperoni pizza for pickup at 6 PM,clear
+Book a spa appointment for massage on Friday at 2 PM,clear
+Schedule a video call with client tomorrow at 11 AM,clear
+Buy 10 units of product XYZ from the online store,clear
+Reserve a conference room for 2 hours starting at 9 AM,clear
+Book a flight to Tokyo departing on March 15th and returning March 22nd,clear
+Order 3 medium coffees and 2 sandwiches for delivery,clear
+Schedule a dentist appointment for teeth cleaning next Monday,clear
+Order 2 pizzas with extra cheese for delivery,clear
+Order 3 burgers and 2 fries for pickup,clear
+Order 1 large coffee and 2 donuts,clear
+Order 5 books from Amazon with express shipping,clear
+Order 10 units of product ABC for office,clear
+Buy 2 movie tickets for Saturday 8 PM show,clear
+Buy 3 notebooks and 5 pens from the store,clear
+Purchase 2 laptops with warranty for the team,clear
+Get 4 sandwiches and 3 drinks for lunch delivery,clear
+Buy 1 year subscription for premium service,clear
