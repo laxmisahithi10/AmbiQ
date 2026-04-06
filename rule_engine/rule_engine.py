@@ -4,8 +4,11 @@ from typing import Callable, Dict, List, Set, Tuple
 import nltk
 import spacy
 from nltk.tokenize import word_tokenize
+from nltk.corpus import wordnet
 
 nltk.download("punkt", quiet=True)
+nltk.download("wordnet", quiet=True)
+nltk.download("omw-1.4", quiet=True)
 nlp = spacy.load("en_core_web_sm")
 
 
@@ -38,7 +41,20 @@ ACTION_VERBS = {
 SCHEDULING_VERBS = {"book", "schedule", "reserve", "arrange", "plan"}
 LOCATION_REQUIRED_VERBS = {"book", "reserve", "schedule", "meet", "arrange"}
 QUANTITY_REQUIRED_VERBS = {"buy", "order"}
-VAGUE_PRONOUNS = {"it", "this", "that", "something", "someone", "thing"}
+_BASE_VAGUE = {"it", "this", "that", "something", "someone", "thing"}
+
+def _build_vague_set() -> Set[str]:
+    expanded = set(_BASE_VAGUE)
+    seed_words = ["thing", "stuff", "somewhere", "someone", "something"]
+    for word in seed_words:
+        for syn in wordnet.synsets(word):
+            for lemma in syn.lemmas():
+                w = lemma.name().lower().replace("_", " ")
+                if len(w) > 2:
+                    expanded.add(w)
+    return expanded
+
+VAGUE_PRONOUNS: Set[str] = _build_vague_set()
 
 QUESTION_STARTERS = {
     "what", "how", "why", "who", "where", "when", "which", "whom",
@@ -380,6 +396,11 @@ RULES: List[Callable] = [
 
 def _informational_guard_applies(intent: str) -> bool:
     return intent == "informational"
+
+
+def get_vague_words(sentence: str) -> List[str]:
+    doc = nlp(sentence)
+    return [token.text for token in doc if token.lower_ in VAGUE_PRONOUNS]
 
 
 def analyze_question(sentence: str) -> AnalysisResult:

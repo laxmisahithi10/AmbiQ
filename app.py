@@ -1,6 +1,6 @@
 import streamlit as st
 
-from rule_engine.rule_engine import analyze_question
+from rule_engine.rule_engine import analyze_question, get_vague_words
 from ml_model.ml_predictor import AmbiguityMLPredictor
 
 # --------------------------------------------------
@@ -9,7 +9,7 @@ from ml_model.ml_predictor import AmbiguityMLPredictor
 st.set_page_config(
     page_title="Question Ambiguity Analysis System",
     page_icon="🧠",
-    layout="centered"
+    layout="wide"
 )
 
 # --------------------------------------------------
@@ -92,6 +92,14 @@ st.markdown("""
     /* Input label override */
     label { color: #c0c0c0 !important; }
 
+    /* Highlight */
+    .highlight { background: #7c2d2d; color: #fca5a5; border-radius: 4px; padding: 0 4px; font-weight: 600; }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] { background-color: #13151f; }
+    .sidebar-title { color: #7c83fd; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .sidebar-label { color: #9a9a9a; font-size: 0.75rem; text-transform: uppercase; margin: 0.8rem 0 0.3rem 0; }
+
     /* Footer */
     .footer { text-align: center; color: #555; font-size: 0.78rem; margin-top: 2rem; }
 </style>
@@ -110,6 +118,40 @@ def load_ml_model():
 ml_predictor = load_ml_model()
 
 # --------------------------------------------------
+# Sidebar — Example Questions
+# --------------------------------------------------
+if "selected_question" not in st.session_state:
+    st.session_state.selected_question = ""
+
+with st.sidebar:
+    st.markdown("<div class='sidebar-title'>💡 Try Example Questions</div>", unsafe_allow_html=True)
+
+    st.markdown("<div class='sidebar-label'>✅ Clear</div>", unsafe_allow_html=True)
+    clear_examples = [
+        "What is machine learning?",
+        "How do I install Python?",
+        "Who invented the telephone?",
+        "What are the benefits of exercise?",
+        "How does photosynthesis work?",
+    ]
+    for ex in clear_examples:
+        if st.button(ex, key=f"c_{ex}"):
+            st.session_state.selected_question = ex
+
+    st.markdown("<div class='sidebar-label'>⚠️ Ambiguous</div>", unsafe_allow_html=True)
+    ambiguous_examples = [
+        "Book it",
+        "Send that file",
+        "Delete this",
+        "Order now",
+        "Schedule a meeting",
+        "Fix the bug",
+    ]
+    for ex in ambiguous_examples:
+        if st.button(ex, key=f"a_{ex}"):
+            st.session_state.selected_question = ex
+
+# --------------------------------------------------
 # Header
 # --------------------------------------------------
 st.markdown("<h1>🧠 Question Ambiguity Analysis</h1>", unsafe_allow_html=True)
@@ -122,7 +164,12 @@ st.markdown(
 # --------------------------------------------------
 # Input
 # --------------------------------------------------
-question = st.text_input("Enter your question", placeholder="Type your question here... e.g. Book it / What is AI?", label_visibility="collapsed")
+question = st.text_input(
+    "Enter your question",
+    value=st.session_state.selected_question,
+    placeholder="Type your question here... e.g. Book it / What is AI?",
+    label_visibility="collapsed"
+)
 
 # --------------------------------------------------
 # Analysis
@@ -131,6 +178,19 @@ if question and question.strip():
 
     rule_result = analyze_question(question)
     ml_result   = ml_predictor.predict(question)
+
+    # ── Ambiguity Highlighting ────────────────────
+    vague_words = get_vague_words(question)
+    if vague_words:
+        highlighted = question
+        for w in set(vague_words):
+            highlighted = highlighted.replace(w, f"<span class='highlight'>{w}</span>")
+        st.markdown(
+            f"<div class='card'><h3>🖊️ Ambiguity Highlighting</h3>"
+            f"<p style='font-size:1.05rem'>{highlighted}</p>"
+            f"<p style='color:#9a9a9a;font-size:0.8rem'>Highlighted words are vague references detected by WordNet-expanded analysis.</p></div>",
+            unsafe_allow_html=True
+        )
 
     badge_class = {
         "booking": "badge-booking",
