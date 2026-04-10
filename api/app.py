@@ -1,11 +1,11 @@
 import sys
 import os
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
 
 import streamlit as st
 
@@ -120,8 +120,8 @@ st.markdown("""
 @st.cache_resource
 def load_ml_model():
     return AmbiguityMLPredictor(
-        "ml_model/ambiguity_model_quora.pkl",
-        "ml_model/tfidf_vectorizer_quora.pkl"
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "ml_model/ambiguity_model_quora.pkl"),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "ml_model/tfidf_vectorizer_quora.pkl")
     )
 
 ml_predictor = load_ml_model()
