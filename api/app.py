@@ -1,16 +1,17 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import nltk
 nltk.download('punkt', quiet=True)
 nltk.download('wordnet', quiet=True)
+nltk.download('omw-1.4', quiet=True)
 
 import streamlit as st
 
-from api.rule_engine.rule_engine import analyze_question, get_vague_words
-from api.ml_model.ml_predictor import AmbiguityMLPredictor
+from rule_engine.rule_engine import analyze_question, get_vague_words
+from ml_model.ml_predictor import AmbiguityMLPredictor
 
 # --------------------------------------------------
 # Page Config
